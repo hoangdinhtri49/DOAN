@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Đồ án 1 - Smart home</title>
+</head>
+
+<body>
+    <div class="t_main">
+        <!-- nhiet do -->
+        <div class="cont">
+            <div class="tt">
+                <strong>
+                    TEMPERATURE
+                </strong>
+            </div>
+            <div style="margin-left: 10%;margin-top: 8%;">
+                <canvas id="cv_tmp" width="200" height="175" style="border-radius: 20px;"></canvas>
+            </div>
+        </div>
+        <!-- do am -->
+        <div class="cont">
+            <div class="tt">
+                <strong style="padding-left: 10px;">
+                    HUMIDITY
+                </strong>
+            </div>
+            <div style="margin-left: 10%;margin-top: 8%;">          
+                <canvas id="cv_hum" width="200" height="175" style="border-radius: 20px;"></canvas>
+            </div>
+        </div>
+        <!-- den -->
+        <div class="cont">
+            <div class="tt">
+                <strong style="padding-left: 10px;">
+                    LAMP
+                </strong>
+            </div>
+            <div class="t_cont">
+                <img id="den" class="im_den" src="./img/light_bulb_off.png" alt="Card image" style="width:50%;margin-top: 10%;">
+                <div class="btn01">
+                    <label class="switch">
+                        <input type="checkbox" id="switchLamp">
+                        <span class="slider round" ></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- quat -->
+        <div class="cont">
+            <div class="tt">
+                <strong style="padding-left: 10px;">
+                    TELEVISION
+                </strong>
+            </div>
+            <div class="t_cont">
+                <img id="tv" class="im_tv" src="./img/tv_off.png" alt="Card image" style="width:50%;margin-top: 10%;">
+                <div class="btn01">
+                    <label class="switch">
+                        <input type="checkbox" id="switchTV">
+                        <span class="slider round" ></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+        <!-- lcd -->
+        <div class="cont">
+            <div class="tt">
+                <strong style="padding-left: 10px;">
+                    WARNING
+                </strong>
+            </div>
+            <div class="t_cont">
+                <img id="warn" class="im_warn" src="./img/warning_off.png" alt="Card image" style="width:50%;margin-top: 10%;">
+                <div class="btn01">
+                    <label class="switch">
+                        <input type="checkbox" id="switchWarn">
+                        <span class="slider round" ></span>
+                    </label>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.9/firebase-database.js"></script>
+<script src="javascript/main.js"></script>
+
+    
+</html>
